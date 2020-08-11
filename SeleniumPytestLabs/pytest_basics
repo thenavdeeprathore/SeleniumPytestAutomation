@@ -1,0 +1,25 @@
+# run all the tests in all the classes:
+---------------------------------------
+py.test
+
+test_demo1.py F..
+test_demo2.py ...
+test_demo3.py ...
+
+
+# run all the tests in one class:
+---------------------------------
+py.test test_demo1.py
+
+test_demo1.py F..
+
+
+# run a specific test in any class:
+-----------------------------------
+py.test -k m2 -v
+
+test_demo1.py::test_m2 PASSED    [ 33%]
+test_demo2.py::test_m2 PASSED    [ 66%]
+test_demo3.py::test_m2 PASSED    [100%]
+
+
